@@ -31,6 +31,7 @@ const LoginPage: React.FC = () => {
         };
         if (age > 50) {
             setError("Sorry mahn, you're too old for this... have you tried facebook?");
+            return;
         };
         try {
             const response = await fetch("http://localhost:3001/login", {
@@ -55,6 +56,9 @@ const LoginPage: React.FC = () => {
         <Container maxWidth="xs">
             <Typography variant="h4" align="center" gutterBottom>
                 Login to imonster
+            </Typography>
+            <Typography align="center" color="#9B99C0">
+                make new monster friends
             </Typography>
             <form onSubmit={handleSubmit}>
                 <TextField
@@ -90,6 +94,9 @@ const LoginPage: React.FC = () => {
                 <Button type="submit" variant="contained" color="primary" fullWidth>
                     Login
                 </Button>
+                <Typography align="center" style={{ marginTop: '2rem' }} color="#F00000">
+                    humans, try at your own peril!
+                </Typography>
             </form>
             {error && (
                 <Typography /*variant="body1"*/ color="error" align="center" style={{ marginTop: '1rem' }}>
