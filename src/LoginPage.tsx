@@ -30,7 +30,7 @@ const LoginPage: React.FC = () => {
             return;
         };
         if (age > 50) {
-            setError("Sorry mahn, you're too old for this\nhave you tried facebook?");
+            setError("Sorry mahn, you're too old for this... have you tried facebook?");
         };
         try {
             const response = await fetch("http://localhost:3001/login", {
