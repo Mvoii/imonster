@@ -1,6 +1,10 @@
 # imonster
 <h3> meet new monster friends </h3>
 
+// hardcoded users:
+    name: "Drac Jr", password: "transylvania", dob: "2041-11-08"
+    name: 'Wolfie Wolf', password: 'moon', dob: '2000-01-01' 
+    name: 'mummy', password: 'egypt', dob: '1000-01-01' 
 
 
 
