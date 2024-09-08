@@ -10,7 +10,7 @@
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, to start both servers, you can run:
 
 ### `npm start`
 
